@@ -15,10 +15,11 @@ def sportschau() -> Sportschau:
 
 def test_sportschau_raises_on_unknown_comp():
     with pytest.raises(KeyError):
-        Sportschau("Unkown_Comp")
+        Sportschau("Unknown_Comp")
 
 
-def test_sportschau_data_dir():
+def test_sportschau_data_dir(sportschau):
+    assert sportschau.data_dir == test_data_dir
     sportschau = Sportschau()
     assert sportschau.data_dir == DATA_DIR
 
