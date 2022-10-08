@@ -1,10 +1,9 @@
-# folders to ignore
-sportschau_bl_data/tests/data/*
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 
+# notebooks
+notebooks/
 # C extensions
 *.so
 
