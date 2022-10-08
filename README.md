@@ -4,7 +4,10 @@ A small package to scrape the physical data for Bundesliga and Bundesliga-2 from
 
 ### Installation:
 ```
-pip install sportschau_bl_data
+git clone https://github.com/znstrider/sportschau_bl_data
+
+cd sportschau_bl_data
+pip install .
 ```
 
 ### Usage:
@@ -46,6 +49,8 @@ data = spo.read_seasons(seasons=["2021/2022"])
 
 
 #### loading stored data:
+Data is stored in Path.home() / "project_data" / "sportschau_bl_data/data"
+
 ```python
 data = spo.load_data(all_comps: bool = False)
 ```
@@ -67,6 +72,6 @@ data = pd.concat(spo.data.values())
     'duels_won_pct',
     'topspeed_kmh',
     'km', # n total
-    'km/game',
+    'km_per_game',
     'sprints', # n total
     'season' # YYYY/YYYY
