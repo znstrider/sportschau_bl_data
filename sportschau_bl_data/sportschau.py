@@ -39,7 +39,7 @@ COLUMN_NAMES = {
     "Quote %": "duels_won_pct",
     "Max. km/h": "topspeed_kmh",
     "km": "km",
-    "km/Spiel": "km/game",
+    "km/Spiel": "km_per_game",
     "Sprints": "sprints",
 }
 
