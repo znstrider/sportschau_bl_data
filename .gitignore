@@ -84,6 +84,9 @@ nosetests.xml
 coverage.xml
 *,cover
 
+#testdata
+sportschau_bl_data/tests/data/*
+
 # Translations
 *.mo
 *.pot
